@@ -1,0 +1,137 @@
+.listings-wrapper {
+    width: 100%;
+    margin-top: 12rem;
+    padding: 3rem 4rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    min-height: 80vh;
+}
+
+.listing {
+    width: 49%;
+    /* height: auto; */
+
+    /* display: flex;
+    flex-direction: column; */
+
+    position: relative;
+}
+
+.listing-img, .listing-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.listing-overlay {
+    z-index: 10;
+    /* display: none; */
+    color: white;
+    min-height: 20rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.listing-status, .listing-info-wrapper {
+    width: 100%;
+    height: 30%;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.listing-status > p {
+    margin:0;
+    padding: 0 8px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}   
+
+.listing-info-wrapper {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.listing-info-wrapper > .listing-address {
+    width: 65%;
+}
+
+.listing-info-wrapper > .listing-info {
+    width: 100%;
+}
+
+.listing-info-wrapper > .listing-price {
+    width: 35%;
+    text-align: right;
+}
+
+/* .listing-img:hover + .listing-overlay, .listing-overlay:hover {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+
+    padding: 1rem;
+} */
+
+.listing-img {
+    width: 100%;
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition-property: filter;
+    transition-duration: 0.3s;
+}
+
+.listing-img:hover, .listing-overlay:hover + .listing-img {
+    /* background-blend-mode: darken; */
+    filter: brightness(50%);
+}
+
+/* .listing-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+#listing-img-1 {
+    background-image: url("../images/test/realestate-listing1-1.webp");
+}
+
+#listing-img-2 {
+    background-image: url("../images/test/realestate-listing2-1.png");
+}
+
+/* status icon styling */
+.active-status {
+    background-color: green;
+}
+
+.pending-status {
+    background-color: orange;
+}
+
+.sold-status {
+    background-color: black;
+}
+
+.coming-soon-status {
+    background-color: red;
+}
+

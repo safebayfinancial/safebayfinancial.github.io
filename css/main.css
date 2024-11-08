@@ -20,6 +20,9 @@ body {
     font-style: normal;
     font-size: 1rem;
     line-height: 30px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -52,7 +55,7 @@ a {
     position: fixed;
     top:0;
     width: 100%;
-    z-index: 10;
+    z-index: 100;
     background-color: white;
 }
 
@@ -72,7 +75,19 @@ a {
     border-top-right-radius: 8px;
 }
 
-.header-top-phone, .header-top-finra {
+/* .header-top-phone, .header-top-finra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    padding: 0 2rem;
+} */
+
+.header-top-finra {
+    display: none;
+}
+
+.header-top-phone {
     display: flex;
     justify-content: center;
     align-items: center;
