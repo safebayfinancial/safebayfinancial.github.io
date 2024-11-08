@@ -125,9 +125,10 @@ a {
     width: 200px;
     display: flex;
     justify-content: end;
+    align-items: center;
 }
 
-.header-img > img {
+.header-img > a > img {
     width: 100%;
     height: auto;
     object-fit: contain;
